@@ -1,0 +1,11 @@
+Added pagination to getUser, using limit and offset in findAll.
+//Data Consistency: In updateUser, after updating the user, it might be more accurate to return the updated user data fetched from the database instead of relying on potentially stale data.
+
+
+UPDATE employees
+SET isAdmin = 'true'
+WHERE eid = 1;
+
+DELETE FROM employees WHERE `employees`.`eid` = 2
+
+Consider adding pagination details (like total count) in the getUser method response for better client-side handling.
